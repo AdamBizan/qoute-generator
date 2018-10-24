@@ -1,3 +1,7 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
 body {
     color:white;
     background:linear-gradient(0deg, rgba(1,1,1,0.5), rgba(1,1,1,0.5)), url("https://i.imgur.com/rlD5E4f.png") center fixed no-repeat;
