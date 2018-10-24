@@ -17,7 +17,7 @@ getQuote(text, author);
 
     var param1 = encodeURIComponent($("#quote").text());
     var param2 = encodeURIComponent($("#author").text());
-    var newUrl = "https://twitter.com/intent/tweet?text=" + param1 + param2;
+    var newUrl = ["https://twitter.com/intent/tweet?text=" + param1 + param2];
     // document.getElementById("tweet").attr("href", newUrl);
 
 
