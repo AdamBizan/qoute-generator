@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html lang="pl-PL">
+<head>
+    <title>Quote Generator</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:b|Lato">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <div class="container-fluid">
+        <div class="text-center">
+            <div class="col-xs-6 text-center" id="title">
+                <p>Quote Generator</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="col-xs-6 center-block text-center" id="quote-box">
+                <div class="quote" id="quote"></div>
+                <div class="author" id="author"></div>
+            </div>
+        </div>
+        <div class="col-xs-6 center-block text-center p-5">
+
+            <input type="button" class="btn btn-default" value="Get a Quote" onClick="window.location.reload()">
+            <!--<a class="btn btn-social btn-twitter" target="_blank" id="tweet"><i class="fa fa-twitter"></i>Tweet this quote!</a>-->
+            <!--<input type="button" class="btn btn-tw" value="Tweet this quote!" onClick="document.attr('href', newUrl)">-->
+            <input type="button" class="btn btn-default" onclick="document.location.href=newUrl" value="Tweet this quote!">
+
+
+
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>
