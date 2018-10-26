@@ -17,6 +17,13 @@ $(function() {
 
     getQuote(text, author);
 
+    $("#getQuote").click(function(event) {
+        event.preventDefault();
+        $('#quote-box').fadeOut(1);
+        getQuote(text, author);
+        $('#quote-box').delay(100).fadeIn(300);
+
+    });
 
     $("#tweet").click(function () {
         var param1 = encodeURIComponent($("#quote").text());

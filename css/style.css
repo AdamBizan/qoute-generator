@@ -27,7 +27,6 @@ html {
     font-weight:100;
     margin:0 auto;
     float:initial;
-    height:3em !important;
     min-height:3em;
 }
 
@@ -39,4 +38,12 @@ html {
 
 #author {
     font-style:italic;
+}
+
+#tweet {
+    cursor:pointer;
+}
+
+#getQuote {
+    cursor:pointer;
 }
