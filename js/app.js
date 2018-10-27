@@ -32,15 +32,9 @@ $(function() {
         $(".btn-twitter").attr("href", newUrl);
     });
     $("#face").click(function () {
-        var pageUrl = encodeURIComponent(document.URL);
-        var param3 = encodeURIComponent($("#quote").text());
-        var param4 = encodeURIComponent($("#author").text());
-        // var newUrl = "https://www.facebook.com/sharer/sharer.php?u=" + param1 + param2;
-        var newUrlFb = "https://www.facebook.com/sharer/sharer.php?u=" + pageUrl;
-
-
-        $(".btn-facebook").attr("href", newUrlFb);
+        var param1 = encodeURIComponent($("#quote").text());
+        var param2 = encodeURIComponent($("#author").text());
+        var newUrl = "https://www.facebook.com/sharer/sharer.php?u=" + param1 + param2;
+        $(".btn-facebook").attr("href", newUrl);
     });
-
-
 });
