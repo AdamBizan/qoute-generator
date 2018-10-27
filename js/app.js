@@ -33,9 +33,17 @@ $(function() {
     });
 
     $("#face").click(function () {
-        var param1 = encodeURIComponent($("#quote").text());
-        var param2 = encodeURIComponent($("#author").text());
-        var newUrlFb = "https://www.facebook.com/sharer/sharer.php?u=" + location.href;
+          var newUrlFb = "https://www.facebook.com/sharer/sharer.php?u=" + location.href;
         $(".btn-facebook").attr("href", newUrlFb);
     });
+
+    $("#star").click(function () {
+        var param1 = $("#quote").text();
+        var param2 = $("#author").text();
+        var qoute = param1 + param2;
+        var locStor = localStorage.setItem("fav", qoute);
+        var lastItem = localStorage.getItem("fav");
+        $('ul').append('<li>' + lastItem);
+
+    })
 });
