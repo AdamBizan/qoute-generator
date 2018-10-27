@@ -21,7 +21,7 @@ $(function() {
         event.preventDefault();
         $('#quote-box').fadeOut(1);
         getQuote(text, author);
-        $('#quote-box').delay(100).fadeIn(300);
+        $('#quote-box').delay(100).fadeIn(500);
 
     });
 
@@ -31,4 +31,23 @@ $(function() {
         var newUrl = "https://twitter.com/intent/tweet?text=" + param1 + param2;
         $(".btn-twitter").attr("href", newUrl);
     });
+    $("#face").click(function () {
+        var pageUrl = encodeURIComponent(document.URL);
+        var param3 = encodeURIComponent($("#quote").text());
+        var param4 = encodeURIComponent($("#author").text());
+        var pageTest=
+        // var u = location.href;
+        // var t = param3 + param4;
+        var newUrlFb = "https://www.facebook.com/sharer/sharer.php?u=" + pageUrl;
+        // var newUrlFb = "http://www.facebook.com/sharer.php?u=" + pageUrl", 'sharer', 'toolbar=0,status=0,width=626,height=436";
+
+
+        $(".btn-facebook").attr("href", newUrlFb);
+    });
+
+    // function fbs_click() {
+    //     u = location.href;
+    //     t = document.title;
+    //     window.open('http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t), 'sharer', 'toolbar=0,status=0,width=626,height=436');
+    //     return false; }
 });

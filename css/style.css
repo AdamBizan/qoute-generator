@@ -1,25 +1,40 @@
 *{
     font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
     color:white;
-    background:linear-gradient(0deg, rgba(1,1,1,0.5), rgba(1,1,1,0.5)), url("https://i.imgur.com/rlD5E4f.png") center fixed no-repeat;
     height: 100%;
     min-height: 100%;
     padding-top: 25px;
     text-align: center;
+    background:linear-gradient(0deg, rgba(1,1,1,0.5), rgba(1,1,1,0.5)), url("https://i.imgur.com/rlD5E4f.png") center fixed no-repeat;
+    background-size: cover;
 }
 html {
     height: 100%;
     min-height: 100%;
 }
 
+.quote-container {
+    min-height: 150px;
+    /*font-size: 14px;*/
+}
+
+/*.box-container{*/
+    /*background:linear-gradient(0deg, rgba(1,1,1,0.5), rgba(1,1,1,0.5)), url("https://i.imgur.com/rlD5E4f.png") center fixed no-repeat;*/
+    /*background-size: cover;*/
+/*}*/
+
 #title {
     font-family:'Poiret One', cursive;
     font-size:70px;
     margin-bottom:1em;
     text-align: center;
+    font-weight: bold;
 }
 
 #quote-box {
@@ -30,20 +45,17 @@ html {
     min-height:3em;
 }
 
-#button {
-    margin-top:6em;
-    float:initial;
-    padding: auto;
+/*#button {*/
+    /*margin-top:6em;*/
+    /*float:initial;*/
+    /*padding: auto;*/
+/*}*/
+
+/*#author {*/
+    /*font-style:italic;*/
+/*}*/
+
+/*.clickable {*/
+    /*cursor:pointer;*/
 }
 
-#author {
-    font-style:italic;
-}
-
-#tweet {
-    cursor:pointer;
-}
-
-#getQuote {
-    cursor:pointer;
-}
