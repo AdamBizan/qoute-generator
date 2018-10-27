@@ -34,6 +34,6 @@ $(function() {
 
     $("#face").click(function () {
         var newUrlFb = "https://www.facebook.com/sharer/sharer.php?u=" + location.href;
-        $(".btn-facebook").attr("href", newUrlFb);
+        $(".btn-facebook").attr(newUrlFb);
     });
 });
