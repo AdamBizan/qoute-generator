@@ -21,13 +21,8 @@ html {
 
 .quote-container {
     min-height: 150px;
-    /*font-size: 14px;*/
+    /*font-size: 2em;*/
 }
-
-/*.box-container{*/
-    /*background:linear-gradient(0deg, rgba(1,1,1,0.5), rgba(1,1,1,0.5)), url("https://i.imgur.com/rlD5E4f.png") center fixed no-repeat;*/
-    /*background-size: cover;*/
-/*}*/
 
 #title {
     font-family:'Poiret One', cursive;
@@ -51,11 +46,11 @@ html {
     /*padding: auto;*/
 /*}*/
 
-/*#author {*/
-    /*font-style:italic;*/
-/*}*/
+#author {
+    font-style:italic;
+}
 
-/*.clickable {*/
-    /*cursor:pointer;*/
+.clickable {
+    cursor:pointer;
 }
 

@@ -31,10 +31,11 @@ $(function() {
         var newUrl = "https://twitter.com/intent/tweet?text=" + param1 + param2;
         $(".btn-twitter").attr("href", newUrl);
     });
+
     $("#face").click(function () {
         var param1 = encodeURIComponent($("#quote").text());
         var param2 = encodeURIComponent($("#author").text());
-        var newUrl = "https://www.facebook.com/sharer/sharer.php?u=" + param1 + param2;
+        var newUrl = "https://www.facebook.com/sharer/sharer.php?u=" + +encodeURIComponent(param1+" -" +param2);
         $(".btn-facebook").attr("href", newUrl);
     });
 });
