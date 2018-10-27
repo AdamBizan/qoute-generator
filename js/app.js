@@ -35,7 +35,7 @@ $(function() {
     $("#face").click(function () {
         var param1 = encodeURIComponent($("#quote").text());
         var param2 = encodeURIComponent($("#author").text());
-        var newUrl = "https://www.facebook.com/sharer/sharer.php?u=" +location.href;
+        var newUrl = "https://www.facebook.com/sharer/sharer.php?u=" + location.href;
         $(".btn-facebook").attr("href", newUrl);
     });
 });
