@@ -54,3 +54,18 @@ html {
     cursor:pointer;
 }
 
+
+.fa-star {
+    transition: all .2s ease-in-out;
+}
+.fa-star:hover {
+    transform: scale(2.0)rotateZ(90deg);
+}
+.fa-star:active {
+    transform: scale(2.0) rotateZ(180deg);
+    color:gold;
+
+}
+ul {
+    list-style-type: none;
+}

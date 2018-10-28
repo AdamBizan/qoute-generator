@@ -9,6 +9,15 @@ $(function() {
             } else {
                 $("div.author").html(" -" + data.quoteAuthor);
             }
+        });
+        $("#star").on("click", function(event) {
+            var param1 = $("#quote").text();
+            var param2 = $("#author").text();
+            var qoute = param1 + param2;
+            var locStor = localStorage.setItem("fav", qoute);
+            var lastItem = localStorage.getItem("fav");
+            $('ul').append('<li>' + lastItem);
+            $( this ).off( event );
         })
     };
 
@@ -37,13 +46,13 @@ $(function() {
         $(".btn-facebook").attr("href", newUrlFb);
     });
 
-    $("#star").click(function () {
-        var param1 = $("#quote").text();
-        var param2 = $("#author").text();
-        var qoute = param1 + param2;
-        var locStor = localStorage.setItem("fav", qoute);
-        var lastItem = localStorage.getItem("fav");
-        $('ul').append('<li>' + lastItem);
-
-    })
+    // $("#star").on("click", function(event) {
+    //     var param1 = $("#quote").text();
+    //     var param2 = $("#author").text();
+    //     var qoute = param1 + param2;
+    //     var locStor = localStorage.setItem("fav", qoute);
+    //     var lastItem = localStorage.getItem("fav");
+    //     $('ul').append('<li>' + lastItem);
+    //     $( this ).off( event );
+    // })
 });
